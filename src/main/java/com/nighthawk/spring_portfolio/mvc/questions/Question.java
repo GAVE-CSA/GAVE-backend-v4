@@ -14,34 +14,34 @@ public class Question {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private String id;
 
-    @Column(name = "Question", nullable = false)
-    private String question;
+    @Column(name = "severity")
+    private String severity;
 
-    @Column(name = "Answer 1", nullable = false)
-    private String answer1;
+    @Column(name = "title")
+    private String title;
 
-    @Column(name = "Answer 2", nullable = false)
-    private String answer2;
+    @Column(name = "description")
+    private String description;
 
-    @Column(name = "Answer 3", nullable = false)
-    private String answer3;
+    @Column(name = "iacontrols")
+    private String iacontrols;
 
-    @Column(name = "Answer 4", nullable = false)
-    private String answer4;
+    @Column(name = "ruleID")
+    private String ruleID;
 
-    @Column(name = "Correct Answer", nullable = false)
-    private Integer correctAnswer;
+    @Column(name = "fixid")
+    private String fixid;
 
-    @Column(name = "Difficulty", nullable = false)
-    private Integer difficulty;
+    @Column(name = "fixtext")
+    private String fixtext;
 
-    @Column(name = "Unit", nullable = false)
-    private Integer unit;
+    @Column(name = "checkid")
+    private String checkid;
 
-    @Column(name = "Points", nullable = false)
-    private Integer points;
+    @Column(name = "checktext")
+    private String checktext;
 
     // Getters and setters
 }
